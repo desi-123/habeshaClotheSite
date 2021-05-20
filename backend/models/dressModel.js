@@ -43,6 +43,7 @@ const dressSchema = mongoose.Schema(
     rating: {
       type: Number,
       default: 0,
+      require: true,
     },
     numReviews: {
       type: Number,

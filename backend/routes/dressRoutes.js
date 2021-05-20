@@ -10,9 +10,7 @@ router
     .get(getDresses)
     .post(protect, admin, createHabdress)
 
-router
-    .route('/:id/reviews')
-    .post(protect, createHabdressReview)
+router.route('/:id/reviews').post(protect, createHabdressReview)
 
 router
     .get('/top', getTopHabdress)
